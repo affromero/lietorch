@@ -13,6 +13,8 @@ license = { text = "BSD-3-Clause" }
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
-    "torch",
     "numpy",
 ]
+
+[tool.uv]
+no-build-isolation-package = ["torch"]
